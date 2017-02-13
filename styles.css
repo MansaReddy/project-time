@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-weight: 300;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+#map {
+  height: 100%;
+  width: 70%;
+  float: right
+
+}
+
+#locations{
+	height: 100%;
+	width: 30%;
+  margin: 30px;
+  float: left;
+}
+
+#control-bar{
+  display: inline-block;;
+	width:  100%;
+	padding: 10px;
+	min-height: 55px;
+  position: relative;
+
+}
+
+/*Media Queries*/
+
+@media(min-width: 1024px) {
+
+	#control-bar,
+  #locations{
+		width: 25%;
+	}
+
+	#map {
+		width: 75%;
+	}
+
+@media(min-width: 700px) and (max-width: 1023px){
+
+  #control-bar,
+  #locations{
+  		width: 100%;
+  	}
+
+  	#map {
+  		width: 100%;
+  	}
+
+@media(max-width: 699px) {
+
+  #map {
+		width: 100%;
+	}
+
+	.place-img-container {
+	    width: 30%;
+	}
+
+	.place-details-container {
+	    width: 70%;
+	}
+}
+
+
+@media(max-width: 599px) {
+	#locations {
+	    float: none;
+	    width: 100%;
+	    height: auto;
+	}
+
+	#location-list {
+	    height: auto;
+	    max-height: 280px;
+
+	}
+
+	#map {
+	    float: none;
+	    width: 100%;
+	    height: 320px;
+	}
+}
